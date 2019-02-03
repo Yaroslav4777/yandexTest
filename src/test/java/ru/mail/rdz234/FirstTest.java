@@ -36,7 +36,7 @@ public class FirstTest {
         WebElement enterButton = driver.findElement(By.xpath("//*[@id='root']/div/div[2]/div/div[3]/div[2]/div/div[1]/form/div[3]/button[1]"));
         enterButton.click();
         WebElement passwordField = driver.findElement(By.xpath("//*[@id='passp-field-passwd']"));
-        passwordField.sendKeys("TestpassworD");
+        passwordField.sendKeys("TestpassworD"); //enter the incorrect password (correct=testpassworD)
         WebElement loginButton = driver.findElement(By.xpath("//*[@id='root']/div/div[2]/div/div[3]/div[2]/div/div/form/div[2]/button"));
         loginButton.click();
         WebElement errorMessage = driver.findElement(By.xpath("//*[@id='root']/div/div[2]/div/div[3]/div[2]/div/div/form/div[1]/div/div[2]"));
